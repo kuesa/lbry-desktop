@@ -4,17 +4,292 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## Unreleased
-
-### Added
-
-- Broken heart icon for unsubscribe ([#2272](https://github.com/lbryio/lbry-desktop/pull/2272)
-
-### Changed
+## [0.36.1] - [Unrelased]
 
 ### Fixed
 
-- Inverse button readability on hover ([#2271](https://github.com/lbryio/lbry-desktop/pull/2271)
+- Escape the generated link for tags ([#2984](https://github.com/lbryio/lbry-desktop/pull/2984))
+
+### Added
+
+### Changed
+
+- Refactor ModalAutoUpdateConfirm into ModalAutoUpdateDownloaded ([#2959](https://github.com/lbryio/lbry-desktop/pull/2959))
+
+## [0.36.0] - [2019-10-4]
+
+### Added
+
+- Sync your balance and preferences between devices ([#2925](https://github.com/lbryio/lbry-desktop/pull/2925))
+- Youtube channel transfer ([#2925](https://github.com/lbryio/lbry-desktop/pull/2925))
+- Max character count on comments ([#2944](https://github.com/lbryio/lbry-desktop/pull/2944))
+- Subscription and file view counts ([#2920](https://github.com/lbryio/lbry-desktop/pull/2920))
+- Pagination on Library, Publishes, and Transactions page ([#2923](https://github.com/lbryio/lbry-desktop/pull/2923))
+- Granular balance information ([#2916](https://github.com/lbryio/lbry-desktop/pull/2916))
+- Keyboard shortcuts for the following actions: ([#2999](https://github.com/lbryio/lbry-desktop/pull/2999))
+  - `→` to Seek Forward
+  - `←` to Seek Backward
+  - `f` to Going Fullscreen
+  - `m` to Mute/Unmute
+
+### Changed
+
+- Upgrade LBRY SDK to [0.42.0](https://github.com/lbryio/lbry-sdk/releases/tag/v0.42.0)
+
+## [0.35.7] - [2019-09-24]
+
+### Fixed
+
+- Fixes app crash for some users
+
+## [0.35.6] - [2019-09-23]
+
+### Fixed
+
+- Paid content can now be purchased successfully
+
+## [0.35.4] - [2019-09-22]
+
+# Notes
+
+This release includes a breaking change that will reset many of your settings. This was required to get settings on lbry.tv to work properly. Sorry.
+
+### Added
+
+- Searching on channel pages! ([#2887](https://github.com/lbryio/lbry-desktop/pull/2887))
+
+### Changed
+
+- Upgrade LBRY SDK to [0.40.1](https://github.com/lbryio/lbry-sdk/releases/tag/v0.40.1) to improve connectivity
+- Storage of local settings ([#2895](https://github.com/lbryio/lbry-desktop/pull/2895))
+
+### Fixed
+
+- Autoplay next related content ([#2901](https://github.com/lbryio/lbry-desktop/pull/2901))
+- Ensure view counted before checking rewards ([#2898](https://github.com/lbryio/lbry-desktop/pull/2898))
+- App crash on German language setting ([#2856](https://github.com/lbryio/lbry-desktop/issues/2856))
+- Rewards display issue ([#2871](https://github.com/lbryio/lbry-desktop/issues/2871))
+- Display issue with upgrade banner on file page ([#2826](https://github.com/lbryio/lbry-desktop/issues/2826))
+- Prevent duplicate tags being added to a publish ([#2817](https://github.com/lbryio/lbry-desktop/issues/2817))
+- Reset page correctly on app refresh ([#2881](https://github.com/lbryio/lbry-desktop/pull/2881))
+
+## [0.35.3] - [2019-09-04]
+
+### Added
+
+- Allow easy thumbnail upload with video on file edits ([#2816](https://github.com/lbryio/lbry-desktop/pull/2816))
+- Better message for unsupported file types ([#2834](https://github.com/lbryio/lbry-desktop/pull/2834))
+- Support for daily reward (not live yet) ([#2849](https://github.com/lbryio/lbry-desktop/issues/2849))
+
+### Fixed
+
+- Canonical URL bugs on home and channel pages ([#2829](https://github.com/lbryio/lbry-desktop/issues/2829))
+- Crash when clicking a channel in "Find New Channels" ([#2825](https://github.com/lbryio/lbry-desktop/issues/2825))
+- SVG and lbry file types not showing correctly ([#2830](https://github.com/lbryio/lbry-desktop/issues/2830)) / ([#2827](https://github.com/lbryio/lbry-desktop/issues/2827))
+- Channel not re-selected on edit ([#2828](https://github.com/lbryio/lbry-desktop/issues/2828))
+- Command + A support on mac to select all text in an input ([#2837](https://github.com/lbryio/lbry-desktop/pull/2837))
+- Search bar getting stuck in focus ([#2500](https://github.com/lbryio/lbry-desktop/pull/2500))
+
+### Changed
+
+- Upgraded [lbry-sdk to 0.40.0](https://github.com/lbryio/lbry-sdk/releases/tag/v0.40.0) to improve wallet syncing and overall connectivity
+
+## [0.35.2] - [2019-08-30]
+
+### Added
+
+- Tips and supports on Channel pages ([#2821](https://github.com/lbryio/lbry-desktop/pull/2821))
+- Choose when you want automatic dark mode to take effect ([#2747](https://github.com/lbryio/lbry-desktop/pull/2747))
+
+### Fixed
+
+- Don't show block button on your own channel ([#2744](https://github.com/lbryio/lbry-desktop/pull/2744))
+- App crash when automatically playing content originally priced in USD ([b347d3fc](https://github.com/lbryio/lbry-desktop/commit/b347d3fc5b492641124d763625e626a340916cb2))
+- Bid amount required on publish page ([#2783](https://github.com/lbryio/lbry-desktop/issues/2783))
+- Fixed subscription auto downloads ([#2767](https://github.com/lbryio/lbry-desktop/issues/2767))
+- Crash with query strings ([#2733](https://github.com/lbryio/lbry-desktop/issues/2733))
+- Autoplay on paid content ([#2762](https://github.com/lbryio/lbry-desktop/issues/2762))
+
+### Changed
+
+- URL format to include both channel and claim short IDs ([#2748](https://github.com/lbryio/lbry-desktop/pull/2748))
+- Upgraded [lbry-sdk to 0.39.0](https://github.com/lbryio/lbry-sdk/releases/tag/v0.39.0) for performance and reliability improvements
+- Upgraded windows certificate so builds continue to be signed properly ([b9bf861b](https://github.com/lbryio/lbry-desktop/commit/b9bf861b5ca2f7209ce54088732bc8e0e7548514))
+- DMCA blocking to include channels ([#2802](https://github.com/lbryio/lbry-desktop/issues/2802))
+
+## [0.35.1] - [2019-08-16]
+
+### Fixed
+
+- Unable to upload thumbnail on publish page ([cad067ad](https://github.com/lbryio/lbry-desktop/commit/cad067ad95ea885db0fc58df3437989298bf5160))
+
+## [0.35.0] - [2019-08-15]
+
+### Fixed
+
+- Add startup statuses back to splash screen ([#2721](https://github.com/lbryio/lbry-desktop/issues/2721))
+- Ensure 'mature' tag is always visible on claim previews for mature content ([#2720](https://github.com/lbryio/lbry-desktop/issues/2720))
+
+### Added
+
+- New video player ([#2707](https://github.com/lbryio/lbry-desktop/issues/2707))
+  - Uses range requests which allow seeking ahead in a video instead of waiting for the file download up to that point
+  - Better support video and audio
+  - Pop out player to keep browsing the app while watching content
+- Ability to block channels ([#2706](https://github.com/lbryio/lbry-desktop/issues/2706))
+- Table styling on file pages ([#2717](https://github.com/lbryio/lbry-desktop/issues/2717))
+- Option to disable startup animation ([#2721](https://github.com/lbryio/lbry-desktop/issues/2721))
+
+## [0.34.2] - [2019-07-26]
+
+### Fixed
+
+- Library and other pages not displaying correctly in some instances
+
+## [0.34.1] - [2019-07-25]
+
+### Fixed
+
+- Fixed wallet unlock while still syncing transactions
+- Fixed invalid character checking on channel and content URLs ([#2661](https://github.com/lbryio/lbry-desktop/issues/2661))
+- Upgrade [SDK to 0.38.5](https://github.com/lbryio/lbry-sdk/releases/tag/v0.38.5) to improve download speeds
+
+## [0.34.0] - [2019-07-23]
+
+### Fixed
+
+- Lots of speed, UI, and style improvements
+- Content is now sorted correctly by the date it was released
+
+### Changed
+
+- Share content options now use beta.lbry.tv instead of spee.ch ([#2614](https://github.com/lbryio/lbry-desktop/pull/2614))
+
+### Added
+
+- New app design for better [content discovery](https://lbry.com/faq/trending) with infinite scroll ([#2477](https://github.com/lbryio/lbry-desktop/pull/2477))
+- First implementation of comments ([#2510](https://github.com/lbryio/lbry-desktop/pull/2510))
+- Ability to edit channels with new metadata and tags ([#2584](https://github.com/lbryio/lbry-desktop/pull/2584))
+- Tagging content on publish page ([#2593](https://github.com/lbryio/lbry-desktop/pull/2593))
+- New loading page ([#2491](https://github.com/lbryio/lbry-desktop/pull/2491))
+- Remember file delete preference ([#2132](https://github.com/lbryio/lbry-desktop/pull/2132))
+- Experimental setting for sending supports ([#2647](https://github.com/lbryio/lbry-desktop/pull/2647))
+- Experimental setting for language with Indonesian and Polish as first translations ([#2539](https://github.com/lbryio/lbry-desktop/pull/2539))
+- Short URLs throughout app ([#2614](https://github.com/lbryio/lbry-desktop/pull/2614))
+- Wallet backup zipping option on Help page ([#2585](https://github.com/lbryio/lbry-desktop/pull/2585))
+
+## [0.33.1] - [2019-06-12]
+
+### Fixed
+
+- Fix reflector bugs on failed attempts and improve wallet connection with [LBRY SDK patch](https://github.com/lbryio/lbry/releases/tag/v0.37.4)
+
+## [0.33.0] - [2019-06-04]
+
+### Fixed
+
+- Channel page styling ([#2520](https://github.com/lbryio/lbry-desktop/pull/2520))
+
+### Added
+
+- Comic book reader ([#2484](https://github.com/lbryio/lbry-desktop/pull/2484))
+- Base functionality for more language support ([#2495](https://github.com/lbryio/lbry-desktop/pull2495))
+- Add easy thumbnail selector for videos ([#2492](https://github.com/lbryio/lbry-desktop/pull2492))
+
+## [0.32.2] - [2019-5-20]
+
+### Fixed
+
+- Upgraded LBRY SDK to 0.37.0 for better network stability
+- Better error logging
+
+## [0.32.1] - [2019-5-14]
+
+### Fixed
+
+- Fix analytics on desktop ([#2480](https://github.com/lbryio/lbry-desktop/pull/2480))
+- Fix text wrapping on file page ([#2480](https://github.com/lbryio/lbry-desktop/pull/2480))
+
+## [0.32.0] - [2019-5-14]
+
+### Fixed
+
+- Updating claims after they are tipped
+- Opening html, markdown, and other text documents
+- Opening links from open.lbry.com
+
+### Added
+
+- New routing setup to allow lbry.tv to use the browser url bar for navigation ([#2408](https://github.com/lbryio/lbry-desktop/pull/2408))
+- Always show new suggested subscriptions ([#2541](https://github.com/lbryio/lbry-desktop/pull/2451))
+
+### Changed
+
+- Remove nested navigation on side bar ([#2399](https://github.com/lbryio/lbry-desktop/pull/2399))
+
+## [0.31.1] - [2019-3-23]
+
+### Fixed
+
+- Long links not wrappng on claim pages ([70df697](https://github.com/lbryio/lbry-desktop/commit/70df697aab56de4278acf9d8535c66409f89d959))
+
+## [0.30.0] - [2019-3-21]
+
+### Added
+
+- Report errors to slack for easier debugging ([#2340](https://github.com/lbryio/lbry-desktop/pull/2340))
+- Add viewcount stats to your published content ([#2335](https://github.com/lbryio/lbry-desktop/pull/2335))
+
+### Changed
+
+- Upgrade LBRY SDK to [0.34.0](https://github.com/lbryio/lbry/releases/tag/v0.34.0) to support better analytics and faster file startup
+- Minor changes for normalization hardfork ([#2297](https://github.com/lbryio/lbry-desktop/pull/2297))
+- New build setup to support lbry.tv ([#2296](https://github.com/lbryio/lbry-desktop/pull/2296))
+- Upgrade Electron and Electron builder to the latest version, including initial differential upgrade support for Windows ([#2366](https://github.com/lbryio/lbry-desktop/pull/2366) / [#2296](https://github.com/lbryio/lbry-desktop/pull/2296))
+- lbry.io > lbry.com ([#2321](https://github.com/lbryio/lbry-desktop/pull/2321))
+
+### Fixed
+
+- Incorrect snackbar messaging when attempting to navigating to a malformed claim name ([#2336](https://github.com/lbryio/lbry-desktop/pull/2336))
+
+## [0.29.4] - 2019-3-12
+
+### Fixed
+
+- Style issue on phone number collection modal
+- White screen when watching videos for some files
+
+## [0.29.3] - 2019-3-7
+
+### Fixed
+
+- Minor style issue with 0 LBC balance on the wallet page
+
+## [0.29.2] - 2019-3-1
+
+### Fixed
+
+- Upgaded lbry-sdk to 0.32.4 to fix startup issue for some users
+
+## [0.29.0] - 2019-2-21
+
+### Added
+
+- Added referral link next to email input ([#2287](https://github.com/lbryio/lbry-desktop/pull/2287))
+- Simple search filter options and feedback option ([#2282](https://github.com/lbryio/lbry-desktop/pull/2282))
+- Broken heart icon for unsubscribe ([#2272](https://github.com/lbryio/lbry-desktop/pull/2272))
+
+### Changed
+
+- Upgrade LBRY SDK to [0.32.2](https://github.com/lbryio/lbry/releases/tag/v0.32.0) for improved download performance. See [0.31](https://github.com/lbryio/lbry/releases/tag/v0.31.0) for other changes since last app release.
+- Styling changes to unify components across projects ([#2279](https://github.com/lbryio/lbry-desktop/pull/2279))
+
+### Fixed
+
+- Inverse button readability on hover ([#2271](https://github.com/lbryio/lbry-desktop/pull/2271))
+- Shutdown on app close ([#2283](https://github.com/lbryio/lbry-desktop/pull/2283))
+- Startup on GitHub version check failure ([#1744](https://github.com/lbryio/lbry-desktop/issues/1774))
+- SDK detection when running manually ([#2258](https://github.com/lbryio/lbry-desktop/issues/2258))
 
 ## [0.28.0] - 2019-2-5
 

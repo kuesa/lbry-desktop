@@ -1,9 +1,11 @@
 .DS_Store
 /node_modules
 /dist
-/static/daemon/lbrynet*
+/static/lbrynet*
+/static/daemon
 /static/locales
 yarn-error.log
 package-lock.json
+.transifexrc
 .idea/
 /build/daemon*

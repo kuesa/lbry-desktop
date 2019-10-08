@@ -1,57 +1,61 @@
 {
-  "plugins": ["flowtype"],
-  "extends": [
-    "airbnb",
-    "plugin:import/electron",
-    "plugin:flowtype/recommended",
-    "plugin:prettier/recommended"
-  ],
+  "parser": "babel-eslint",
+  "extends": ["standard", "standard-jsx", "plugin:react/recommended", "plugin:flowtype/recommended"],
+  "plugins": ["flowtype", "import", "react-hooks"],
   "settings": {
     "import/resolver": {
       "webpack": {
-        "config": "webpack.renderer.additions.js"
+        "config": "webpack.base.config.js"
       }
     }
   },
-  "parser": "babel-eslint",
   "env": {
     "browser": true,
     "node": true
   },
   "globals": {
     "__static": true,
-    "staticResourcesPath": true,
+    "i18n": true,
     "__": true,
-    "__n": true,
-    "app": true
+    "app": true,
+    "IS_WEB": true,
+    "WEBPACK_PORT": true
   },
   "rules": {
-    "import/no-commonjs": "warn",
-    "import/no-amd": "warn",
-    "prettier/prettier": [
+    "brace-style": 0,
+    "comma-dangle": ["error", "always-multiline"],
+    "handle-callback-err": 0,
+    "indent": 0,
+    "jsx-quotes": ["error", "prefer-double"],
+    "new-cap": 0,
+    "no-console": 1,
+    "no-control-regex": 0,
+    "no-multi-spaces": 0,
+    "no-redeclare": 0,
+    "no-return-await": 0,
+    "object-curly-spacing": 0,
+    "one-var": 0,
+    "prefer-promise-reject-errors": 0,
+    "react/jsx-indent": 0,
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "space-before-function-paren": [
       "error",
       {
-        "trailingComma": "es5",
-        "printWidth": 100,
-        "singleQuote": true
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "always"
       }
     ],
-    "func-names": ["warn", "as-needed"],
-    "jsx-a11y/label-has-for": 0,
-    "import/prefer-default-export": 0,
-    "no-return-assign": 0,
-    "react/require-default-props": 0,
-    "react/jsx-closing-tag-location": 0,
-    "jsx-a11y/no-noninteractive-element-to-interactive-role": 0,
-    "class-methods-use-this": 0,
-    "jsx-a11y/interactive-supports-focus": 0,
-    "jsx-a11y/click-events-have-key-events": 0,
-    "consistent-return": 0,
-    "no-prototype-builtins": 0,
-    "flowtype/space-after-type-colon": [2, "always", { "allowLineBreak": true }],
-    "no-restricted-syntax": 0,
-    "no-empty": 0,
-    "react/prefer-stateless-function": 0,
-    "react/sort-comp": 0
+    "standard/object-curly-even-spacing": 0,
+    "standard/no-callback-literal": 0,
+    "react/display-name": 0,
+    "semi": [
+      "error",
+      "always",
+      {
+        "omitLastInOneLineBlock": true
+      }
+    ]
   }
 }
